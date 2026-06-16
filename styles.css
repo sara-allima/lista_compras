@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --background-primary: #F4F5FB;
+    --background-secondary: #FFFFFF;
+
+    --color-brand: #CA3884;
+    --color-brand-hover:#A52C6B;
+    --color-danger: #C93847;
+
+    --content-primary: #080B12;
+    --content-secondary: #374151;
+    --content-tertiary: #9CA3AF;
+    --always-white: #FFFFFF;
+
+    --border-primary: #D1D5DB;
+    --border-hover: #B9C2D0;
+}
+
+h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+label {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+}
+
+a {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    font-weight: 500;
+}
+
+button {
+    height: 2.75rem;
+    padding: 0.625rem 1.5rem;
+    border-radius: 12px;
+    border-style: none;
+    font-weight: 600;
+    color: var(--always-white);
+    background-color: var(--color-brand);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button:hover {
+    background-color: var(--color-brand-hover);
+}
+
+input {
+    height: 2.75rem;
+    border-radius: 12px;
+    background-color: var(--background-secondary);
+    border-color: var(--color-brand-hover);
+    border: solid 2px var(--border-primary);
+    padding: 0 1.125rem;
+    transition: border 0.2s;
+}
+input:hover {
+    border-color: var(--border-hover);
+}
+/* Ainda não tá funcionando */
+input:active {
+    border-color: var(--color-brand);
+}
