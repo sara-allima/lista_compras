@@ -74,6 +74,51 @@ input:hover {
     border-color: var(--border-hover);
 }
 /* Ainda não tá funcionando */
-input:active {
+.input-text:focus {
+    border: 2px solid var(--color-brand);
+    outline: none;
+}
+input:focus::placeholder {
+    color: var(--content-primary);
+}
+.custom-checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+.custom-checkbox input {
+    display: none;
+}
+.custom-checkbox span {
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--border-primary);
+    border-radius: 6px;
+    box-sizing: border-box;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-checkbox:hover span {
+    border-color: var(--border-hover);
+}
+.custom-checkbox input:checked + span {
+    background-color: var(--color-brand);
     border-color: var(--color-brand);
+}
+.custom-checkbox input:checked + span::after {
+    content: "";
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    width: 4px;
+    height: 8px;
+
+    border: solid #FFF;
+    border-width: 0 2px 2px 0;
+
+    transform: translate(-50%, -60%) rotate(45deg);
 }
