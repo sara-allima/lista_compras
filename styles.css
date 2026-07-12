@@ -96,8 +96,6 @@ input:focus::placeholder {
     border-radius: 6px;
     box-sizing: border-box;
     position: relative;
-    align-items: center;
-    justify-content: center;
 }
 
 .custom-checkbox:hover span {
