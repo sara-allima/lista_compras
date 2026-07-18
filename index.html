@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
 
+
     <title>Quicklist</title>
 </head>
 <body>
@@ -28,10 +29,18 @@
                 <button type="submit" id="button-submit-task">Adicionar item</button>
             </form>
 
-            <div id="container">
+            <div class="list-container">
                 <ul id="tasks-container">
-
+                    <li>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" />
+                            <span></span>Coisa
+                        </label> 
+                        
+                        <i class="hgi hgi-stroke hgi-rounded hgi-delete-02"></i>
+                    </li>
                 </ul>
+                
             </div>
         </div>
     </main>
