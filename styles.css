@@ -73,7 +73,7 @@ input {
 input:hover {
     border-color: var(--border-hover);
 }
-/* Ainda não tá funcionando */
+
 .input-text:focus {
     border: 2px solid var(--color-brand);
     outline: none;
