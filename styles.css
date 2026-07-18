@@ -73,7 +73,7 @@ input {
 input:hover {
     border-color: var(--border-hover);
 }
-/* Ainda não tá funcionando */
+
 .input-text:focus {
     border: 2px solid var(--color-brand);
     outline: none;
@@ -127,4 +127,31 @@ header {
 
 .logo-image {
     margin: 1.563rem 0 0;
+}
+
+main {
+    border: 1px solid red;
+    width: 40%;
+    margin: 3.875rem auto 0;
+}
+
+a {
+    text-decoration: none;
+    align-content: center;
+    color: var(--color-brand);
+    margin-left: 0.25rem;
+}
+
+.main-title {
+    margin: 1rem 0 2.75rem;
+}
+
+.input-container form{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.input-container form input {
+    flex-grow: 1;
 }
