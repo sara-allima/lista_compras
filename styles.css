@@ -155,6 +155,7 @@ a {
 li {
     /* border: 1px solid green; */
     padding: 0.75rem;
+    margin-bottom: 0.75rem;
     background-color: var(--background-secondary);
     list-style: none;
     border-radius: 12px;
