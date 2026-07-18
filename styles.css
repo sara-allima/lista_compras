@@ -131,7 +131,7 @@ header {
 
 main {
     border: 1px solid red;
-    width: 60%;
+    width: 40%;
     margin: 3.875rem auto 0;
 }
 
@@ -143,5 +143,15 @@ a {
 }
 
 .main-title {
-    margin-top: 1rem;
+    margin: 1rem 0 2.75rem;
+}
+
+.input-container form{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.input-container form input {
+    flex-grow: 1;
 }
