@@ -5,8 +5,16 @@ const tasksList = document.getElementById('tasks-container')
 btn.addEventListener('click', (e) => {
     e.preventDefault()
     
-    tasksList.appendChild(addTask(inputTask.value))
+    forbidBlankTask(inputTask.value)
 })
+
+function forbidBlankTask(taskValue) {
+    if(taskValue.length <= 0) {
+        alert('Insira o nome da tarefa')
+    } else {
+        tasksList.appendChild(addTask(inputTask.value))
+    }
+}
 
 function addTask(taskValue) {
     const li = document.createElement('li')
@@ -29,13 +37,3 @@ function addTask(taskValue) {
 
     return li
 }
-/*
-<li>
-    <label class="custom-checkbox">
-        <input type="checkbox" />
-        <span></span>Coisa
-    </label> 
-    
-    <i class="hgi hgi-stroke hgi-rounded hgi-delete-02"></i>
-</li>
- */
