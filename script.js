@@ -32,6 +32,12 @@ function addTask(taskValue) {
     label.appendChild(span)
     label.appendChild(document.createTextNode(taskValue))
 
+    i.addEventListener('click', (e) => {
+        e.preventDefault()
+
+        i.parentElement.remove()
+    })
+
     li.appendChild(label)
     li.appendChild(i)
 
