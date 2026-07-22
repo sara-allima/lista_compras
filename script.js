@@ -1,6 +1,7 @@
 const btn = document.getElementById('button-submit-task')
 const inputTask = document.getElementById('task')
 const tasksList = document.getElementById('tasks-container')
+const main = document.querySelector('main')
 
 btn.addEventListener('click', (e) => {
     e.preventDefault()
@@ -43,5 +44,31 @@ function addTask(taskValue) {
 function removeTask(icon) {
     icon.addEventListener('click', (e) => {
         icon.parentElement.remove()
+
+        const removeContainer = document.createElement('div')
+        const iconMessageContainer = document.createElement('div')
+        const warningIcon = document.createElement('i')
+        const p = document.createElement('p')
+        const closeIcon = document.createElement('i')
+
+        removeContainer.classList.add('remove-warning')
+        iconMessageContainer.classList.add('remove-warning-message')
+        closeIcon.classList.add('hgi', 'hgi-stroke', 'hgi-rounded', 'hgi-cancel-01')
+        warningIcon.classList.add('hgi', 'hgi-stroke', 'hgi-rounded', 'hgi-alert-circle')
+
+        main.appendChild(removeContainer)
+        iconMessageContainer.appendChild(warningIcon)
+        iconMessageContainer.appendChild(document.createTextNode('O item foi removido da lista'))
+        removeContainer.appendChild(iconMessageContainer)
+        removeContainer.appendChild(closeIcon)
     })
 }
+/*
+    <div class="remove-warning">
+        <div class="remove-warning-message">
+            <i class="hgi hgi-stroke hgi-rounded hgi-alert-circle"></i>
+            <p>O item foi removido da lista</p>
+        </div>
+        <i class="hgi hgi-stroke hgi-rounded hgi-cancel-01"></i>
+    </div>
+*/
