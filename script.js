@@ -65,6 +65,10 @@ function removeTask(icon) {
         removeContainer.appendChild(closeIcon)
 
         closeIcon.addEventListener('click', (e) => closeIcon.parentElement.remove())
+
+        const myTimeout = setTimeout(() => {
+            closeIcon.parentElement.remove()
+        }, 3000);
     })
 }
 /*
