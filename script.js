@@ -7,6 +7,8 @@ btn.addEventListener('click', (e) => {
     e.preventDefault()
     
     forbidBlankTask(inputTask.value)
+
+    inputTask.value = '';
 })
 
 function forbidBlankTask(taskValue) {
