@@ -62,9 +62,7 @@ function removeTask(icon) {
         removeContainer.appendChild(iconMessageContainer)
         removeContainer.appendChild(closeIcon)
 
-        closeIcon.addEventListener('click', (e) => {
-            closeIcon.parentElement.remove()
-        })
+        closeIcon.addEventListener('click', (e) => closeIcon.parentElement.remove())
     })
 }
 /*
