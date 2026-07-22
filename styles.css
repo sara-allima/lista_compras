@@ -153,7 +153,6 @@ a {
 }
 
 li {
-    /* border: 1px solid green; */
     padding: 0.75rem;
     margin-bottom: 0.75rem;
     background-color: var(--background-secondary);
@@ -161,7 +160,7 @@ li {
     border-radius: 12px;
     display: flex;
     justify-content: space-between;
-    height: 3.063rem;
+    height: 2.75rem;
     align-items: center;
 }
 
@@ -182,7 +181,26 @@ li {
 .list-container {
     margin: 2.5rem 0 0;
 }
-li i {
+.hgi-delete-02 {
     color: var(--content-tertiary);
+    cursor: pointer;
+}
+.remove-warning {
+    margin-top: 1.5rem;
+    height: 2.75rem;
+    color: var(--always-white);
+    background-color: var(--color-danger);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.75rem;
+}
+.remove-warning-message {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem
+}
+.hgi-cancel-01 {
     cursor: pointer;
 }
