@@ -44,7 +44,7 @@ function addTask(taskValue) {
 function removeTask(icon) {
     icon.addEventListener('click', (e) => {
         icon.parentElement.remove()
-
+        
         const removeContainer = document.createElement('div')
         const iconMessageContainer = document.createElement('div')
         const warningIcon = document.createElement('i')
@@ -61,6 +61,10 @@ function removeTask(icon) {
         iconMessageContainer.appendChild(document.createTextNode('O item foi removido da lista'))
         removeContainer.appendChild(iconMessageContainer)
         removeContainer.appendChild(closeIcon)
+
+        closeIcon.addEventListener('click', (e) => {
+            closeIcon.parentElement.remove()
+        })
     })
 }
 /*
