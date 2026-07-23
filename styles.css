@@ -204,3 +204,15 @@ li {
 .hgi-cancel-01 {
     cursor: pointer;
 }
+
+@media (max-width: 1030px) {
+    button {
+        width: 100%;
+    }
+    input {
+        width: 100%;
+    }
+    main {
+        width: 80%;
+    }
+}
